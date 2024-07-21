@@ -1,0 +1,19 @@
+server:
+  name: go-firestore-sample
+  port: 8080
+
+log:
+  level: info
+  map:
+    time: "@timestamp"
+    msg: message
+
+middleware:
+  log: true
+  skips: /health
+  request: request
+  response: response
+  size: size
+
+project_id:
+credentials:
